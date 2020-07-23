@@ -1,6 +1,8 @@
 # Twitter-RSS
 Lightweight Twitter timeline to RSS converter via Flask, rfeed, and twitter-scraper; Feedly compatible.
 
+![Feedly Screenshot](https://github.com/SuperSonicHub1/Twitter-RSS/blob/master/feedly.png?raw=true)
+
 [Try it right now!](https://Twitter-RSS.supersonichub1.repl.co)
 
 Every Twitter-to-RSS feed converter I've used or have heard of is either dead, doesn't support Feedly all that well, or costs money, so I made my own over a few days.
