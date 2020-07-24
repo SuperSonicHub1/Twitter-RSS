@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="static/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	 crossorigin="anonymous">
+
+	<title>Twitter RSS</title>
+</head>
+
+<body>
+	<div class="container-lg" , style='text-align: center;'>
+		<h1 class="display-1">Welcome to Twitter RSS</h1>
+    <p class='lead'>Enter a Twitter user's tag in the form below to get your feed today!</p> 
+		<form class="form-inline" action='/lookup'>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control form-control-lg mr-sm-2" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name='q'>
+          </div>
+        <button type="submit" class="btn btn-primary my-2 my-sm-0">Submit</button>
+        </form>
+  </div>
+  
+  </body>
+</html>

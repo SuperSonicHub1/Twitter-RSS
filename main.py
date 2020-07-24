@@ -1,5 +1,5 @@
 from twitscrape import twitterToRSS # Returns RSS feed
-from flask import Flask, send_from_directory # Web app framework
+from flask import Flask, send_from_directory, render_template, redirect, url_for, request # Web app framework
 import schedule  # Schedule clearing of cache
 import os # for retrieving favicon
 
@@ -11,11 +11,15 @@ def favicon():
 
 @app.route('/')
 def index():
-    return "Greetings user! Welcome to my basic Twitter RSS feed! In order to use it, just enter the name of the account that you want to follow, without the '@'."
+    return render_template('index.html')
 
 @app.route('/<username>/')
 def returnRSS(username):
     return twitterToRSS(username)
+
+@app.route('/lookup')
+def lookup():
+    return redirect(url_for('returnRSS', username=request.args.get("q")))
 
 twitterToRSS.cache_clear() # Clears cache every server reboot.
 
