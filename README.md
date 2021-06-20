@@ -15,5 +15,6 @@ Clone this repository, install dependencies with Python Poetry, and run the `mai
 ```bash
 git clone https://github.com/SuperSonicHub1/Twitter-RSS.git
 poetry install
-python3 main.py```
-Yes, I know, I know, I should it `app.py` so that's it's compatible with `flask run`, but this was a project originally hosted on Repl.it, and having custom run commands on there can be irritating sometimes, so deal with it or just change the name of one file yourself. Also, if you are actually considering deploying this app, please remove `app.run()` from `main.py` and use a real WSGI server.
+python3 main.py
+```
+Yes, I know, I know, I should name it `app.py` so that's it's compatible with `flask run`, but this was a project originally hosted on Repl.it, and having custom run commands on there can be irritating sometimes, so deal with it or just change the name of one file yourself. Also, if you are actually considering deploying this app, please remove `app.run()` from `main.py` and use a real WSGI server.

@@ -3,8 +3,6 @@ from functools import lru_cache  # Cache feeds
 from rfeed import *  # Create RSS feeds
 from extensions import * # Insert images into RSS feeds
 from flask import make_response  # Tell Flask that it's being sent XML
-from banner import get_banner
-
 
 @lru_cache(maxsize=None)
 def twitterToRSS(user):
@@ -75,7 +73,6 @@ def twitterToRSS(user):
             MediaContent(),
             Webfeeds(), 
             WebfeedsIcon(profile.profile_photo), 
-            WebfeedsCover(get_banner(profile.username))
         ]
     )
 
